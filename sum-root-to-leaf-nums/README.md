@@ -5,9 +5,6 @@ Problem based on [this leetcode problem.](https://leetcode.com/problems/sum-root
 The idea is to provide the candidate with a broken solution and have them debug it.
 If they are successful, the problem requirements are changed and they then have to modify the solution.
 
-In this case the modification could be something along the lines of asking them to reverse the order of the digits (i.e. a path that would have previously represented 457 onw represents 754), or to find the maximum root-to-leaf number.
-
-A more challenging modification which would substantially represent an entirely different problem might be to find the sum of the "level numbers", where each number's digits are composed of the values for each node on a given level of the tree (horizontally based rather than vertically).
 
 # Broken Solution Code
 ```python3 []
@@ -66,3 +63,14 @@ class Solution:
             return res
         return dfs(root)
 ```
+
+# Problem Modification ideas
+
+## Easy
+1. Reverse the order of the digits (i.e. a path that would have previously represented 457 onw represents 754)
+1. Find the maximum root-to-leaf number
+1. Consider any node at depth 3 a leaf node, do not traverse deeper into the tree
+1. Ignore duplicate root-to-leaf numbers if they show up within the tree
+
+## More involved
+1. Find the sum of the "level numbers", where each number's digits are composed of the values for each node on a given level of the tree (horizontally based rather than vertically).
