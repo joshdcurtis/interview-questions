@@ -1,2 +1,2 @@
 # interview-questions
-Sample Interview Questions
+Some ideas of interview questions that could be used to assess candidates.
