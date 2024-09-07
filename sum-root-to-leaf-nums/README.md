@@ -35,8 +35,8 @@ class Solution:
 ## Bug List:
 1. Pops from path before finding `dfs(node.left) + dfs(node.right)`
 1. `i` should be `10`'s exponent, not its multiplier.
-1. Wrong index of path when calculating res. Should iterate backwards rather than forwards
-1. Never pops from path in the base case where we've reached a leaf node
+1. Wrong index of `path` when calculating `res`. Should iterate backwards rather than forwards
+1. Never pops from `path` in the base case where we've reached a leaf node
 
 # Sample Correct Solution Code
 ```python3 []
